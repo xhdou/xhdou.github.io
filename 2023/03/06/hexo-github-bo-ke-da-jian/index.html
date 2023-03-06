@@ -4,11 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="才思敏捷的小派派">
-    <meta name="description" content="一、准备工作
-GitHub账号需要有一个GitHub账号，没有的话到 官网 申请一个。注册很简单，网上教程很多，可以参考GitHub申请账号。
-
-安装Git在自己电脑上安装好Git，hexo部署到GitHub时要用。网上找篇教程或者参考Gi">
+    <meta name="keywords" content="Hexo+Github博客搭建, 才思敏捷的小派派">
+    <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -20,7 +17,7 @@ GitHub账号需要有一个GitHub账号，没有的话到 官网 申请一个。
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>才思敏捷的小派派</title>
+    <title>Hexo+Github博客搭建 | 才思敏捷的小派派</title>
     <link rel="icon" type="image/png" href="/favicon.png">
     
 
@@ -350,12 +347,12 @@ GitHub账号需要有一个GitHub账号，没有的话到 官网 申请一个。
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/0.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/1.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title"></h1>
+                    <h1 class="description center-align post-title">Hexo+Github博客搭建</h1>
                 </div>
             </div>
         </div>
@@ -415,133 +412,7 @@ GitHub账号需要有一个GitHub账号，没有的话到 官网 申请一个。
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="一、准备工作"><a href="#一、准备工作" class="headerlink" title="一、准备工作"></a>一、准备工作</h1><ol>
-<li><p><code>GitHub</code>账号<br>需要有一个<code>GitHub</code>账号，没有的话到 官网 申请一个。<br>注册很简单，网上教程很多，可以参考<a target="_blank" rel="noopener" href="https://blog.csdn.net/yaorongke/article/details/119086305">GitHub申请账号</a>。</p>
-</li>
-<li><p>安装<code>Git</code><br>在自己电脑上安装好<code>Git</code>，<code>hexo</code>部署到<code>GitHub</code>时要用。<br>网上找篇教程或者参考<a target="_blank" rel="noopener" href="https://blog.csdn.net/yaorongke/article/details/119085413">Git安装(Windows)</a>。</p>
-</li>
-<li><p>安装<code>NodeJS</code><br>在自己电脑上安装好<code>NodeJS</code>，<code>Hexo</code>是基于<code>NodeJS</code>编写的，所以需要安装<code>NodeJS</code>和<code>npm</code>工具。<br>网上找篇教程或者参考<a target="_blank" rel="noopener" href="https://blog.csdn.net/yaorongke/article/details/119084295">NodeJS安装及配置(Windows)</a>。</p>
-<h1 id="二、创建仓库"><a href="#二、创建仓库" class="headerlink" title="二、创建仓库"></a>二、创建仓库</h1><p>在<code>GitHub</code>上创建一个新的代码仓库用于保存我们的网页。</p>
-</li>
-</ol>
-<p>点击<code>Your repositories</code>，进入仓库页面。</p>
-<p>点击New按钮，进入仓库创建页面。</p>
-<p>填写仓库名，格式必须为<code>&lt;用户名&gt;.github.io</code>，然后点击<code>Create repository</code>。</p>
-<h1 id="三、安装Hexo"><a href="#三、安装Hexo" class="headerlink" title="三、安装Hexo"></a>三、安装Hexo</h1><p>采用<code>Hexo</code>来创建我们的博客网站，<code>Hexo</code>是一个基于NodeJS的静态博客网站生成器，使用<code>Hexo</code>不需开发，只要进行一些必要的配置即可生成一个个性化的博客网站，非常方便。点击进入<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/">官网</a>。</p>
-<pre class="line-numbers language-python" data-language="python"><code class="language-python">npm install hexo<span class="token operator">-</span>cli <span class="token operator">-</span>g    <span class="token comment"># 安装 Hexo</span>
-hexo init blog             <span class="token comment"># 创建一个项目 blog 并初始化</span>
-cd blog                    <span class="token comment"># 到 blog 文件夹下</span>
-npm install                <span class="token comment"># 安装 hexo 包</span>
-hexo server                <span class="token comment"># 本地启动</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<h1 id="四、更换主题"><a href="#四、更换主题" class="headerlink" title="四、更换主题"></a>四、更换主题</h1><pre class="line-numbers language-Hexo```默认的主题不太好看，不过官方提供了数百种主题供用户选择，可以根据个人喜好更换，官网主题点[这里](https://hexo.io/themes/)查看。个人用的[hexo-theme-matery](https://github.com/blinkfox/hexo-theme-matery/blob/develop/README_CN.md)，就以此为例。" data-language="Hexo```默认的主题不太好看，不过官方提供了数百种主题供用户选择，可以根据个人喜好更换，官网主题点[这里](https://hexo.io/themes/)查看。个人用的[hexo-theme-matery](https://github.com/blinkfox/hexo-theme-matery/blob/develop/README_CN.md)，就以此为例。"><code class="language-Hexo```默认的主题不太好看，不过官方提供了数百种主题供用户选择，可以根据个人喜好更换，官网主题点[这里](https://hexo.io/themes/)查看。个人用的[hexo-theme-matery](https://github.com/blinkfox/hexo-theme-matery/blob/develop/README_CN.md)，就以此为例。">
-安装主题
-&#96;&#96;&#96;python
-cd blog                                                   # 到博客根目录下
-git clone https:&#x2F;&#x2F;github.com&#x2F;blinkfox&#x2F;hexo-theme-matery.git   # 拉取主题仓库源码<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>将<code>blog</code>文件下的<code>_confige.yml</code>中的主题改成<code>next</code></p>
-<pre class="line-numbers language-none"><code class="language-none">theme: next<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>主题内的其他的内容设置请看作者文档。</p>
-<h1 id="五、创建文章"><a href="#五、创建文章" class="headerlink" title="五、创建文章"></a>五、创建文章</h1><p>你可以执行下列命令来创建一篇新文章或者新的页面。</p>
-<pre class="line-numbers language-none"><code class="language-none">$ hexo new [layout] &lt;title&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>您可以在命令中指定文章的布局<code>（layout）</code>，默认为<code>post</code>，可以通过修改 <code>_config.yml</code> 中的 <code>default_layout</code> 参数来指定默认布局。详情请看<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/writing">官方文档</a>。  </p>
-<p>例如执行如下命令创建一篇新文章，名为《测试文章》</p>
-<pre class="line-numbers language-none"><code class="language-none">hexo new post 测试文章<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<h1 id="六、不同电脑同步"><a href="#六、不同电脑同步" class="headerlink" title="六、不同电脑同步"></a>六、不同电脑同步</h1><p>参考<a target="_blank" rel="noopener" href="https://blog.csdn.net/K1052176873/article/details/122879462">https://blog.csdn.net/K1052176873/article/details/122879462</a>。  </p>
-<h2 id="（一）hexo文件结构"><a href="#（一）hexo文件结构" class="headerlink" title="（一）hexo文件结构"></a>（一）hexo文件结构</h2><p>老电脑上的目录结构</p>
-<table>
-<thead>
-<tr>
-<th align="center">文件夹啊</th>
-<th align="center">说明</th>
-<th align="center">是否需要上传GitHub</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">node_modules</td>
-<td align="center">hexo需要的模块，就是一些基础的npm安装模块，比如一些美化插件，在执行npm install的时候会重新生成</td>
-<td align="center">不需要</td>
-</tr>
-<tr>
-<td align="center">themes</td>
-<td align="center">主题文件</td>
-<td align="center">需要</td>
-</tr>
-<tr>
-<td align="center">public</td>
-<td align="center">hexo g命令执行后生成的静态页面文件</td>
-<td align="center">不需要</td>
-</tr>
-<tr>
-<td align="center">packages.json</td>
-<td align="center">记录了hexo需要的包的信息，之后换电脑了npm根据这个信息来安装hexo环境</td>
-<td align="center">需要</td>
-</tr>
-<tr>
-<td align="center">_config.yml</td>
-<td align="center">全局配置文件</td>
-<td align="center">需要</td>
-</tr>
-<tr>
-<td align="center">.gitignore</td>
-<td align="center">hexo生成的默认的.gitignore模块</td>
-<td align="center">需要</td>
-</tr>
-<tr>
-<td align="center">scaffolds</td>
-<td align="center">文章的模板</td>
-<td align="center">需要</td>
-</tr>
-<tr>
-<td align="center">deploy_git</td>
-<td align="center">hexo g自动生成的</td>
-<td align="center">不需要</td>
-</tr>
-</tbody></table>
-<h2 id="（二）同步原理"><a href="#（二）同步原理" class="headerlink" title="（二）同步原理"></a>（二）同步原理</h2><p>主要思路是利用<code>git</code>分支来实现<code>hexo</code>的同步。</p>
-<pre class="line-numbers language-hexo```生成的静态页面文件默认放在```main```分支上，这是由```_config.yml```配置文件所决定的" data-language="hexo```生成的静态页面文件默认放在```main```分支上，这是由```_config.yml```配置文件所决定的"><code class="language-hexo```生成的静态页面文件默认放在```main```分支上，这是由```_config.yml```配置文件所决定的">
-你可以在全局配置文件&#96;&#96;&#96;_config.yml&#96;&#96;&#96;中找到这么一段<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-<p>deploy:<br>  type: git<br>  repo: <a href="mailto:&#x67;&#x69;&#x74;&#x40;&#x67;&#105;&#116;&#104;&#117;&#x62;&#x2e;&#x63;&#111;&#x6d;">&#x67;&#x69;&#x74;&#x40;&#x67;&#105;&#116;&#104;&#117;&#x62;&#x2e;&#x63;&#111;&#x6d;</a>:username/username.github.io.git<br>  branch: main<br>  <pre class="line-numbers language-none"><code class="language-none"> 
-因此每当我们执行&#96;&#96;&#96;hexo d&#96;&#96;&#96;的时候，hexo都会帮我们把生成好的静态页面文件推到&#96;&#96;&#96;main&#96;&#96;&#96;分支上。
-
-在我们第一次部署好博客的时候，&#96;&#96;&#96;github&#96;&#96;&#96;给我们创建的唯一一个分支就是&#96;&#96;&#96;main&#96;&#96;&#96;分支，同时也是默认分支。默认分支就意味着每次我们执行&#96;&#96;&#96;git clone&#96;&#96;&#96; 仓库地址或者&#96;&#96;&#96;git pull&#96;&#96;&#96;仓库地址拉取的是默认分支的代码。
-
-但是执行&#96;&#96;&#96;hexo d&#96;&#96;&#96; 对应的分支和默认分支是没有关系的，因为这是由配置文件决定的，配置文件写的哪个分支就是哪个分支。
-
-因此，&#96;&#96;&#96;hexo&#96;&#96;&#96;生成的静态博客文件默认放在&#96;&#96;&#96;main&#96;&#96;&#96;分支上。&#96;&#96;&#96;hexo&#96;&#96;&#96;的源文件（部署环境文件）可以都放在&#96;&#96;&#96;hexo&#96;&#96;&#96;分支上（可以新创建一个&#96;&#96;&#96;hexo&#96;&#96;&#96;分支）。然后把&#96;&#96;&#96;hexo&#96;&#96;&#96;分支设置成默认分支。
-
-## （三）老电脑上具体操作
-先创建一个分支&#96;&#96;&#96;hexo&#96;&#96;&#96;
-
-将其设置为默认分支
-
-&#96;&#96;&#96;clone&#96;&#96;&#96;该&#96;&#96;&#96;hexo&#96;&#96;&#96;仓库到本地（clone的是hexo默认分支）   
-&#96;&#96;&#96;git clone https:&#x2F;&#x2F;github.com&#x2F;xhdou&#x2F;xhdou.github.io.git&#96;&#96;&#96;
-
-下载的文件夹里仅留下&#96;&#96;&#96;.git&#96;&#96;&#96;文件夹，其他的文件都删除
-
-找见我们&#96;&#96;&#96;hexo&#96;&#96;&#96;原位置，将&#96;&#96;&#96;hexo&#96;&#96;&#96;文件夹内除&#96;&#96;&#96;.deploy_git&#96;&#96;&#96;以外都复制到&#96;&#96;&#96;clone&#96;&#96;&#96;下来的文件夹中
-
-注意：
-1. 现在&#96;&#96;&#96;clone&#96;&#96;&#96;下来的文件夹内应该有个&#96;&#96;&#96;.gitignore&#96;&#96;&#96;文件，用来忽略一些不需要的文件，表示这些类型文件不需要git。如果没有，右键新建，内容如下：
-&#96;&#96;&#96;.DS_Store
-Thumbs.db
-db.json
-*.log
-node_modules&#x2F;
-public&#x2F;
-.deploy*&#x2F;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></p>
-<ol start="2">
-<li><p>如果已经<code>clone</code>过主题文件，那么需要把<code>theme</code>主题文件夹里的 <code>.git</code> 也删除。因为<code>git</code>不能嵌套上传，最好是显示隐藏文件，检查一下有没有，否则上传的时候会出错，导致你的主题文件无法上传，这样你的配置在别的电脑上就用不了了。</p>
-</li>
-<li><p>将<code>clone</code>并修改以后的文件夹推送到远程库</p>
-<pre class="line-numbers language-none"><code class="language-none">git add .  
-git commit –m add_branch
-git push<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-<p>此时已经成功将整个网站推送到了远程库的默认分支<code>hexo</code><br>至此，网站部署至<code>main</code>分支，整个网站备份至<code>hexo</code>分支。当网站的配置或文章修改后都要将远程仓库更新。首先，依次执行<br><code>git add .``git commit -m ChangeFiles（更新信息内容可改)``git push （或者git push origin hexo)</code><br>保证hexo分支版本最新。然后执行<br><code>hexo d -g</code><br>（在此之前，有时可能需要执行<code>hexo clean</code>），完成后就会发现，最新改动已经更新到<code>main</code>分支了，两个分支互不干扰！</p>
-</li>
-</ol>
-
+                
                 
             </div>
             <hr/>
@@ -690,9 +561,9 @@ git push<span aria-hidden="true" class="line-numbers-rows"><span></span><span></
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="">
+                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="Hexo+Github博客搭建">
                         
-                        <span class="card-title"></span>
+                        <span class="card-title">Hexo+Github博客搭建</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
