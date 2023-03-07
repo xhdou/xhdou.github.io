@@ -174,9 +174,10 @@ git push origin hexo         # 推送当前本地分支到指定远程分支(hex
 
 至此，网站部署至```main```分支，整个网站备份至```hexo```分支。当网站的配置或文章修改后都要将远程仓库更新。首先，依次执行：  
 ```base
-git add -A               # A指all，将工作区被修改、被删除、新增的文件都提交到暂存区
-git commit -m [massage]  # 将暂存区所有文件添加到本地仓库, [massage]是备注信息        
-git push origin hexo     # 推送当前本地分支到指定远程分支(hexo)，保证hexo分支版本最新。
+git pull origin             # 将远程主机 origin 的 hexo 分支拉取过来，与本地的分支合并。
+git add -A                  # A指all，将工作区被修改、被删除、新增的文件都提交到暂存区
+git commit -m hexo环境配置   # 将暂存区所有文件添加到本地仓库息        
+git push origin hexo        # 推送当前本地分支到指定远程分支(hexo)，保证hexo分支版本最新。
 ```
 然后执行  
 ```base
