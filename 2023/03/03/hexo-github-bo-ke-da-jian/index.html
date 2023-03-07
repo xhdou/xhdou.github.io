@@ -350,7 +350,7 @@ GitHub账号需要有一个GitHub账号，没有的话到官网申请一个。�
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/1.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://raw.githubusercontent.com/xhdou/image/main/PicGoCover.png')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
@@ -377,12 +377,29 @@ GitHub账号需要有一个GitHub账号，没有的话到官网申请一个。�
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/Hexo/">
+                                <span class="chip bg-color">Hexo</span>
+                            </a>
+                        
+                            <a href="/tags/%E5%8D%9A%E5%AE%A2/">
+                                <span class="chip bg-color">博客</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/" class="post-category">
+                                计算机
+                            </a>
+                        
+                    </div>
                     
                 </div>
             </div>
@@ -391,17 +408,37 @@ GitHub账号需要有一个GitHub账号，没有的话到官网申请一个。�
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2023-03-03
+                </div>
+                
+
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
                     2023-03-06
                 </div>
                 
 
                 
-
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
+                    1.9k
+                </div>
                 
 
                 
+                <div class="info-break-policy">
+                    <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
+                    6 分
+                </div>
+                
 
                 
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="far fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
             </div>
         </div>
         <hr class="clearfix">
@@ -552,8 +589,14 @@ git commit -m &quot;Hexo配置&quot;     # 将暂存区所有文件添加到本�
 git push origin hexo         # 推送当前本地分支到指定远程分支(hexo)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 
 <p>此时已经成功将整个网站环境配置文件推送到了远程库的默认分支<code>hexo</code><br><img src="https://raw.githubusercontent.com/xhdou/image/main/PicGo20230306132325.png"> </p>
-<p>至此，网站部署至<code>main</code>分支，整个网站备份至<code>hexo</code>分支。当网站的配置或文章修改后都要将远程仓库更新。首先，依次执行  </p>
-<p><code>base git add -A git commit -m ChangeFiles（更新信息内容可改)``git push （或者git push origin hexo)</code><br>保证hexo分支版本最新。然后执行<br><code>hexo d -g</code><br>（在此之前，有时可能需要执行<code>hexo clean</code>），完成后就会发现，最新改动已经更新到<code>main</code>分支了，两个分支互不干扰！</p>
+<p>至此，网站部署至<code>main</code>分支，整个网站备份至<code>hexo</code>分支。当网站的配置或文章修改后都要将远程仓库更新。首先，依次执行：  </p>
+<pre class="line-numbers language-base" data-language="base"><code class="language-base">git add -A               # A指all，将工作区被修改、被删除、新增的文件都提交到暂存区
+git commit -m [massage]  # 将暂存区所有文件添加到本地仓库, [massage]是备注信息        
+git push origin hexo     # 推送当前本地分支到指定远程分支(hexo)，保证hexo分支版本最新。<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<p>然后执行  </p>
+<pre class="line-numbers language-base" data-language="base"><code class="language-base">hexo g
+hexo d<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<p>（在此之前，有时可能需要执行<code>hexo clean</code>），完成后就会发现，最新改动已经更新到<code>main</code>分支了，两个分支互不干扰！</p>
 
                 
             </div>
@@ -570,7 +613,7 @@ git push origin hexo         # 推送当前本地分支到指定远程分支(hex
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="/about" rel="external nofollow noreferrer">花豆</a>
+                    <a href="/about" rel="external nofollow noreferrer">小派派</a>
                 </span>
             </div>
             <div class="reprint__type">
@@ -580,7 +623,7 @@ git push origin hexo         # 推送当前本地分支到指定远程分支(hex
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://xhdou.github.io/2023/03/06/hexo-github-bo-ke-da-jian/">https://xhdou.github.io/2023/03/06/hexo-github-bo-ke-da-jian/</a>
+                    <a href="https://xhdou.github.io/2023/03/03/hexo-github-bo-ke-da-jian/">https://xhdou.github.io/2023/03/03/hexo-github-bo-ke-da-jian/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -593,7 +636,7 @@ git push origin hexo         # 推送当前本地分支到指定远程分支(hex
                     本博客所有文章除特別声明外，均采用
                     <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
                     许可协议。转载请注明来源
-                    <a href="/about" target="_blank">花豆</a>
+                    <a href="/about" target="_blank">小派派</a>
                     !
                 </span>
             </div>
@@ -617,7 +660,15 @@ git push origin hexo         # 推送当前本地分支到指定远程分支(hex
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
+                            
+                                <a href="/tags/Hexo/">
+                                    <span class="chip bg-color">Hexo</span>
+                                </a>
+                            
+                                <a href="/tags/%E5%8D%9A%E5%AE%A2/">
+                                    <span class="chip bg-color">博客</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -694,18 +745,16 @@ git push origin hexo         # 推送当前本地分支到指定远程分支(hex
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="far fa-dot-circle"></i>&nbsp;本篇
-            </div>
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2023/03/06/hexo-github-bo-ke-da-jian/">
+                <a href="/2023/03/06/picgo-da-jian-tu-chuang/">
                     <div class="card-image">
                         
+                        <img src="https://raw.githubusercontent.com/xhdou/image/main/PicGo20230306181459.png" class="responsive-img" alt="PicGo+Github搭建图床">
                         
-                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="Hexo+Github博客搭建">
-                        
-                        <span class="card-title">Hexo+Github博客搭建</span>
+                        <span class="card-title">PicGo+Github搭建图床</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -715,18 +764,37 @@ git push origin hexo         # 推送当前本地分支到指定远程分支(hex
                         
                     </div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2023-03-06
-                            </span>
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2023-03-06
+                        </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            花豆
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/" class="post-category">
+                                    计算机
+                                </a>
+                            
                             
                         </span>
                     </div>
                 </div>
-
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/PicGo/">
+                        <span class="chip bg-color">PicGo</span>
+                    </a>
+                    
+                    <a href="/tags/%E5%9B%BE%E5%BA%8A/">
+                        <span class="chip bg-color">图床</span>
+                    </a>
+                    
+                    <a href="/tags/%E5%B7%A5%E5%85%B7/">
+                        <span class="chip bg-color">工具</span>
+                    </a>
+                    
+                </div>
                 
             </div>
         </div>
@@ -956,6 +1024,9 @@ git push origin hexo         # 推送当前本地分支到指定远程分支(hex
             |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
             
             <br>
+            
+                &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
+                        class="white-color">2.2k</span>
             
             
             
