@@ -1,9 +1,19 @@
 ---
 title: Hexo+Github博客搭建
-date: 2023-03-06 11:01:50
+date: 2023-03-03 09:25:00
+author: 小派派
+img: https://raw.githubusercontent.com/xhdou/image/main/PicGoCover.png
+top: true
+hide: false
+cover: true
+coverImg: https://raw.githubusercontent.com/xhdou/image/main/PicGoCover.png
+toc: true
+mathjax: false
+categories: 计算机
 tags:
+  - Hexo
+  - 博客
 ---
-
 ## 一、准备工作
 1. `GitHub`账号  
 需要有一个`GitHub`账号，没有的话到官网申请一个。  
@@ -162,10 +172,15 @@ git push origin hexo         # 推送当前本地分支到指定远程分支(hex
 此时已经成功将整个网站环境配置文件推送到了远程库的默认分支```hexo``` 
 ![](https://raw.githubusercontent.com/xhdou/image/main/PicGo20230306132325.png) 
 
-至此，网站部署至```main```分支，整个网站备份至```hexo```分支。当网站的配置或文章修改后都要将远程仓库更新。首先，依次执行  
+至此，网站部署至```main```分支，整个网站备份至```hexo```分支。当网站的配置或文章修改后都要将远程仓库更新。首先，依次执行：  
 ```base
-git add -A
-git commit -m ChangeFiles（更新信息内容可改)``git push （或者git push origin hexo)```
-保证hexo分支版本最新。然后执行  
-```hexo d -g```
+git add -A               # A指all，将工作区被修改、被删除、新增的文件都提交到暂存区
+git commit -m [massage]  # 将暂存区所有文件添加到本地仓库, [massage]是备注信息        
+git push origin hexo     # 推送当前本地分支到指定远程分支(hexo)，保证hexo分支版本最新。
+```
+然后执行  
+```base
+hexo g
+hexo d
+```
 （在此之前，有时可能需要执行```hexo clean```），完成后就会发现，最新改动已经更新到```main```分支了，两个分支互不干扰！
