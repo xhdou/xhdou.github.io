@@ -591,7 +591,7 @@ public&#x2F;
 
 <p>此时已经成功将整个网站环境配置文件推送到了远程库的默认分支<code>hexo</code><br><img src="https://raw.githubusercontent.com/xhdou/image/main/PicGo20230306132325.png"> </p>
 <p>至此，网站部署至<code>main</code>分支，整个网站备份至<code>hexo</code>分支。当网站的配置或文章修改后都要将远程仓库更新。首先，依次执行：  </p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">git</span> pull hexo               <span class="token comment"># 将远程主机 hexo 分支拉取过来，与本地的分支合并。</span>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">git</span> pull origin hexo              <span class="token comment"># 将远程主机 hexo 分支拉取过来，与本地的分支合并。</span>
 <span class="token function">git</span> <span class="token function">add</span> <span class="token parameter variable">-A</span>                  <span class="token comment"># A指all，将工作区被修改、被删除、新增的文件都提交到暂存区</span>
 <span class="token function">git</span> commit <span class="token parameter variable">-m</span> hexo环境配置   <span class="token comment"># 将暂存区所有文件添加到本地仓库息        </span>
 <span class="token function">git</span> push origin hexo        <span class="token comment"># 推送当前本地分支到指定远程分支(hexo)，保证hexo分支版本最新。</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
@@ -613,17 +613,17 @@ hexo d<span aria-hidden="true" class="line-numbers-rows"><span></span><span></sp
 <p>上面步骤中，<code>npm install</code>其实就是读取了<code>packages.json</code>里面的信息，自动安装依赖，有的小伙伴可能只执行<code>npm install</code>就行了，不过按照上面的三步是最稳妥的。</p>
 <p>这里提一嘴，当新电脑上的操作成功之后，其实对于新电脑还是老电脑其实都无所谓了，任何一台电脑包括老电脑只要安装了<code>NodeJs</code>环境，就都可以按照在新电脑上的操作完整地复刻出一个<code>hexo</code>环境，你甚至可以把老电脑原有的<code>hexo</code>工程删掉再执行上面这几步一样可以快速构建<code>hexo</code>环境，可以看到步骤非常简单。</p>
 <p>此外，为了保证同步，推荐先执行：</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">git</span> pull hexo<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">git</span> pull origin hexo<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 <p>合并更新再进行博客的编写。</p>
 <h2 id="七、总结常用的操作命令"><a href="#七、总结常用的操作命令" class="headerlink" title="七、总结常用的操作命令"></a>七、总结常用的操作命令</h2><p>环境配置修改后，需要执行以下命令：</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">git</span> pull hexo               <span class="token comment"># 将远程主机 hexo 分支拉取过来，与本地的分支合并。</span>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">git</span> pull origin hexo              <span class="token comment"># 将远程主机 hexo 分支拉取过来，与本地的分支合并。</span>
 <span class="token function">git</span> <span class="token function">add</span> <span class="token parameter variable">-A</span>                  <span class="token comment"># A指all，将工作区被修改、被删除、新增的文件都提交到暂存区</span>
 <span class="token function">git</span> commit <span class="token parameter variable">-m</span> hexo环境配置   <span class="token comment"># 将暂存区所有文件添加到本地仓库息        </span>
 <span class="token function">git</span> push origin hexo        <span class="token comment"># 推送当前本地分支到指定远程分支(hexo)，保证hexo分支版本最新。</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 
 <p>换电脑写博客前（指的是曾经也写过博客的电脑），一般要执行以下命令：</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">git</span> pull hexo    <span class="token comment"># 将远程主机 hexo 分支拉取过来，与本地的分支合并。</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">git</span> pull origin hexo    <span class="token comment"># 将远程主机 hexo 分支拉取过来，与本地的分支合并。</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 <p>新建文章，执行以下命令：</p>
 <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">hexo new post 测试文章<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
