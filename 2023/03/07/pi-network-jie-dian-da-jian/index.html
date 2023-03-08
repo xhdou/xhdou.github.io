@@ -4,11 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Hexo+Github博客搭建, 才思敏捷的小派派">
-    <meta name="description" content="一、准备工作
-GitHub账号需要有一个GitHub账号，没有的话到官网申请一个。注册很简单，网上教程很多，可以参考GitHub申请账号。
-
-安装Git在自己电脑上安装好Git，hexo部署到GitHub时要用。网上找篇教程或者参考Git安">
+    <meta name="keywords" content="Pi Network节点搭建, 才思敏捷的小派派">
+    <meta name="description" content="一、新人常见问题（一）版本选择，045还是047？目前官方版本是045，但是大陆有墙，我们的节点无法正常与项目方的服务器进行通信，因此当时项目方开发了047版本，但是047版本虽然可以同步，但是通过抓包可以发现047无法向项目方服务器发送h">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -20,7 +17,7 @@ GitHub账号需要有一个GitHub账号，没有的话到官网申请一个。�
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Hexo+Github博客搭建 | 才思敏捷的小派派</title>
+    <title>Pi Network节点搭建 | 才思敏捷的小派派</title>
     <link rel="icon" type="image/png" href="/favicon.png">
     
 
@@ -350,12 +347,12 @@ GitHub账号需要有一个GitHub账号，没有的话到官网申请一个。�
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://raw.githubusercontent.com/xhdou/image/main/PicGoCover.png')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://raw.githubusercontent.com/xhdou/image/main/image/FS7KGcVUAEPHwP.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Hexo+Github博客搭建</h1>
+                    <h1 class="description center-align post-title">Pi Network节点搭建</h1>
                 </div>
             </div>
         </div>
@@ -379,12 +376,16 @@ GitHub账号需要有一个GitHub账号，没有的话到官网申请一个。�
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/Hexo/">
-                                <span class="chip bg-color">Hexo</span>
+                            <a href="/tags/%E5%8C%BA%E5%9D%97%E9%93%BE/">
+                                <span class="chip bg-color">区块链</span>
                             </a>
                         
-                            <a href="/tags/%E5%8D%9A%E5%AE%A2/">
-                                <span class="chip bg-color">博客</span>
+                            <a href="/tags/%E8%8A%82%E7%82%B9/">
+                                <span class="chip bg-color">节点</span>
+                            </a>
+                        
+                            <a href="/tags/Pi-Network/">
+                                <span class="chip bg-color">Pi Network</span>
                             </a>
                         
                     </div>
@@ -408,7 +409,7 @@ GitHub账号需要有一个GitHub账号，没有的话到官网申请一个。�
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2023-03-03
+                    2023-03-07
                 </div>
                 
 
@@ -422,14 +423,14 @@ GitHub账号需要有一个GitHub账号，没有的话到官网申请一个。�
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    2.5k
+                    2k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    9 分
+                    7 分
                 </div>
                 
 
@@ -452,188 +453,119 @@ GitHub账号需要有一个GitHub账号，没有的话到官网申请一个。�
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="一、准备工作"><a href="#一、准备工作" class="headerlink" title="一、准备工作"></a>一、准备工作</h2><ol>
-<li><p><code>GitHub</code>账号<br>需要有一个<code>GitHub</code>账号，没有的话到官网申请一个。<br>注册很简单，网上教程很多，可以参考<a target="_blank" rel="noopener" href="https://blog.csdn.net/yaorongke/article/details/119086305">GitHub申请账号</a>。</p>
-</li>
-<li><p>安装<code>Git</code><br>在自己电脑上安装好<code>Git</code>，<code>hexo</code>部署到<code>GitHub</code>时要用。<br>网上找篇教程或者参考<a target="_blank" rel="noopener" href="https://blog.csdn.net/yaorongke/article/details/119085413">Git安装(Windows)</a>。</p>
-</li>
-<li><p>安装<code>NodeJS</code><br>在自己电脑上安装好<code>NodeJS</code>，<code>Hexo</code>是基于<code>NodeJS</code>编写的，所以需要安装<code>NodeJS</code>和<code>npm</code>工具。<br>网上找篇教程或者参考<a target="_blank" rel="noopener" href="https://blog.csdn.net/yaorongke/article/details/119084295">NodeJS安装及配置(Windows)</a>。</p>
-</li>
-</ol>
-<h2 id="二、创建仓库"><a href="#二、创建仓库" class="headerlink" title="二、创建仓库"></a>二、创建仓库</h2><p>在<code>GitHub</code>上创建一个新的代码仓库用于保存我们的网页。</p>
-<p>点击<code>Your repositories</code>，进入仓库页面。</p>
-<p>点击<code>New</code>按钮，进入仓库创建页面。</p>
-<p>填写仓库名，格式必须为<code>&lt;用户名&gt;.github.io</code>，然后点击<code>Create repository</code>。</p>
-<h2 id="三、安装Hexo"><a href="#三、安装Hexo" class="headerlink" title="三、安装Hexo"></a>三、安装Hexo</h2><p>采用<code>Hexo</code>来创建我们的博客网站，<code>Hexo</code>是一个基于NodeJS的静态博客网站生成器，使用<code>Hexo</code>不需开发，只要进行一些必要的配置即可生成一个个性化的博客网站，非常方便。点击进入<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/">官网</a>。</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">npm</span> <span class="token function">install</span> hexo-cli <span class="token parameter variable">-g</span>    <span class="token comment"># 安装 Hexo </span>
-hexo init blog             <span class="token comment"># 创建一个项目 blog 并初始化</span>
-<span class="token builtin class-name">cd</span> blog                    <span class="token comment"># 到 blog 文件夹下</span>
-<span class="token function">npm</span> <span class="token function">install</span>                <span class="token comment"># 安装 hexo 包</span>
-hexo server                <span class="token comment"># 本地启动</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p><code>hexo</code>常用命令：</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">hexo clean     <span class="token comment"># 清除缓存文件 (db.json) 和已生成的静态文件 (public)</span>
-hexo g         <span class="token comment"># 生成静态文件</span>
-hexo d         <span class="token comment"># 部署之前预先生成静态文件</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-<p>更多命令请参考<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/commands.html">官方文档</a>。</p>
-<h2 id="四、更换主题"><a href="#四、更换主题" class="headerlink" title="四、更换主题"></a>四、更换主题</h2><p>默认的主题不太好看，不过官方提供了数百种主题供用户选择，可以根据个人喜好更换，官网主题点<a target="_blank" rel="noopener" href="https://hexo.io/themes/">这里</a>查看。个人用的<a target="_blank" rel="noopener" href="https://github.com/blinkfox/hexo-theme-matery/blob/develop/README_CN.md">hexo-theme-matery</a>，就以此为例。</p>
-<p>安装主题</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token builtin class-name">cd</span> blog                                                       <span class="token comment"># 到博客根目录下</span>
-<span class="token function">git</span> clone https://github.com/blinkfox/hexo-theme-matery.git   <span class="token comment"># 拉取主题仓库源码</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-<p>将<code>blog</code>文件下的<code>_confige.yml</code>中的主题改成<code>next</code></p>
-<pre class="line-numbers language-yaml" data-language="yaml"><code class="language-yaml"><span class="token key atrule">theme</span><span class="token punctuation">:</span> next<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>主题内的其他的内容设置请看<a target="_blank" rel="noopener" href="http://blinkfox.com/2018/09/28/qian-duan/hexo-bo-ke-zhu-ti-zhi-hexo-theme-matery-de-jie-shao/">作者文档</a>。</p>
-<h2 id="五、创建文章"><a href="#五、创建文章" class="headerlink" title="五、创建文章"></a>五、创建文章</h2><p>你可以执行下列命令来创建一篇新文章或者新的页面。</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">hexo new <span class="token punctuation">[</span>layout<span class="token punctuation">]</span> <span class="token operator">&lt;</span>title<span class="token operator">></span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>您可以在命令中指定文章的布局<code>（layout）</code>，默认为<code>post</code>，可以通过修改 <code>_config.yml</code> 中的 <code>default_layout</code> 参数来指定默认布局。详情请看<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/writing">官方文档</a>。  </p>
-<p>如下修改 <code>Hexo</code> 博客目录中的 <code>_config.yml</code>，打开这个配置是为了在生成文章的时候生成一个同名的资源目录用于存放图片文件（当然一般不用这种方式，都用图床）。</p>
-<pre class="line-numbers language-yaml" data-language="yaml"><code class="language-yaml"><span class="token key atrule">post_asset_folder</span><span class="token punctuation">:</span> <span class="token boolean important">true</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-
-<p>例如执行如下命令创建一篇新文章，名为《测试文章》</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">hexo new post 测试文章<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>执行完成后在<code>source\_posts</code>目录下生成了一个<code>md</code>文件和一个同名的资源目录(用于存放图片)。</p>
-<h2 id="六、不同电脑同步"><a href="#六、不同电脑同步" class="headerlink" title="六、不同电脑同步"></a>六、不同电脑同步</h2><p>参考：</p>
+                <h2 id="一、新人常见问题"><a href="#一、新人常见问题" class="headerlink" title="一、新人常见问题"></a>一、新人常见问题</h2><h3 id="（一）版本选择，045还是047？"><a href="#（一）版本选择，045还是047？" class="headerlink" title="（一）版本选择，045还是047？"></a>（一）版本选择，045还是047？</h3><p>目前官方版本是<code>045</code>，但是大陆有墙，我们的节点无法正常与项目方的服务器进行通信，因此当时项目方开发了<code>047</code>版本，但是<code>047</code>版本虽然可以同步，但是通过抓包可以发现<code>047</code>无法向项目方服务器发送<code>heart</code>包（相当于工作打卡记录），因此<code>047</code>无法获取奖励。</p>
+<p>其次，<code>047</code>需要公网<code>ip</code>，目前国内公网<code>ip</code>貌似很难申请，至少据我了解江苏境内的电信都已经停止了申请公网<code>ip</code>业务（移动、联通未了解）。而045需要购买境外云服，通过云服来做内网穿透及科学上网，云服费用<code>20-50RMB</code>&#x2F;月不等。</p>
+<p>有人说<code>045</code>无法竞争超级节点，其实吧，从一开始就坚持047的人我就不好说什么了，但是就现阶段，你说你即便选择<code>047</code>，你超级节点能竞争过那些坚持一两年的人么，而且还没奖励。所以我个人建议新人选择<code>045</code>，直接做普通节点拿奖励就好。</p>
+<p>以下搭建教程也是针对<code>045</code>版本的。</p>
+<h3 id="（二）需要什么电脑配置？"><a href="#（二）需要什么电脑配置？" class="headerlink" title="（二）需要什么电脑配置？"></a>（二）需要什么电脑配置？</h3><p>节点电脑主要看两个硬件，<code>CPU</code>和运行内存。</p>
+<p><code>CPU</code>的话，<code>i3</code>以上就行，越好奖励越高，运行内存<code>8G</code>以上。</p>
+<p>现在也有很多人用洋垃圾（工作室用的那种电脑，能多开）做节点了，确实奖励很高，因为E系列<code>CPU</code>核心数和线程数高，像我自己最近换了一个<code>18</code>核<code>36</code>线程的，<code>X99</code>大板，<code>64</code>内存，也就<code>2000RMB</code>。当然洋垃圾质量存在一定风险，这个自行了解评判。</p>
+<p>总之一个原则，核心数和线程数越高，节点的奖励也相对越高。</p>
+<h3 id="（三）电脑系统选择？"><a href="#（三）电脑系统选择？" class="headerlink" title="（三）电脑系统选择？"></a>（三）电脑系统选择？</h3><p>目前普遍是<code>win10</code>专业版，版本尽可能新点就好，也看到有人用<code>win11</code>系统，系统安装的事情就自行解决了，本教程不负责。</p>
+<p>如果电脑是专门用作节点的，建议将存储盘合并，只留一个C盘。</p>
+<h2 id="二、购买云服务器（VPS）"><a href="#二、购买云服务器（VPS）" class="headerlink" title="二、购买云服务器（VPS）"></a>二、购买云服务器（VPS）</h2><p>服务器厂家太多了，自行了解吧，总之一个原则，没有又便宜又稳定的云服。我个人是选择的<a target="_blank" rel="noopener" href="https://www.vultr.com/">vultr</a>，洛杉矶机房，<code>Ubuntu</code>系统，5$&#x2F;月的套餐，购买教程就不出了，网上多的很，也可以参考这篇<a target="_blank" rel="noopener" href="https://www.vultrcn.com/1.html">教程</a>。</p>
+<p>购买好后可以用<a target="_blank" rel="noopener" href="http://www.hostbuf.com/">FinalShell</a>远程登录,小白可以参考这篇<a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_44024740/article/details/122277082">教程</a>。</p>
+<h2 id="三、魔法上网"><a href="#三、魔法上网" class="headerlink" title="三、魔法上网"></a>三、魔法上网</h2><p>折腾过<code>OpenVpn</code>、<code>WireGuard</code>、<code>V2ray</code>、<code>Navie</code>，最终还是选择了<code>OpenVpn</code>（踩过的坑太多，都是泪~）。</p>
+<h3 id="（一）服务端安装"><a href="#（一）服务端安装" class="headerlink" title="（一）服务端安装"></a>（一）服务端安装</h3><p>用<code>FinalShell</code>远程登录你的<code>VPS</code>，如果你购买的是腾讯云的，可能需要先获得<code>root</code>权限，输入命令<code>sudo -i</code>即可。</p>
+<h4 id="1、安装服务"><a href="#1、安装服务" class="headerlink" title="1、安装服务"></a>1、安装服务</h4><p>一件安装脚本：</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">wget</span> https://git.io/vpn <span class="token parameter variable">-O</span> openvpn-install.sh <span class="token operator">&amp;&amp;</span> <span class="token function">bash</span> openvpn-install.sh<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p><img src="https://raw.githubusercontent.com/xhdou/image/main/20230308113824.png"></p>
+<p>下图中，<code>52.68.245.48</code>是你的<code>vps</code>的<code>IP</code>地址，可以直接回车默认，或者输入提前解析到这个<code>ip</code>地址的域名，回车。<br><img src="https://raw.githubusercontent.com/xhdou/image/main/20230308113915.png"></p>
+<p>如下图：<br><img src="https://raw.githubusercontent.com/xhdou/image/main/20230308142922.png"></p>
 <ol>
-<li><a target="_blank" rel="noopener" href="https://blog.csdn.net/K1052176873/article/details/122879462">Hexo在多台电脑上提交和更新</a>。  </li>
-<li><a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_30105599/article/details/118302086">多台电脑同步更新Hexo博客</a></li>
+<li>选择协议：输入<code>1</code>；</li>
+<li>是选择<code>openvpn</code>使用的端口，默认<code>1194</code>，或自定义；</li>
+<li>是选择<code>DNS</code>,我喜欢用 <code>Google</code>；</li>
+<li>是选择<code>openvpn</code>配置文件的文件名，自定义或默认，我选择默认，直接回车；</li>
+<li>按任意键安装<code>Openvpn</code>，回车即可开始安装。</li>
 </ol>
-<h3 id="（一）hexo文件结构"><a href="#（一）hexo文件结构" class="headerlink" title="（一）hexo文件结构"></a>（一）hexo文件结构</h3><p>老电脑上的目录结构<br><img src="https://raw.githubusercontent.com/xhdou/image/main/PicGo4ce330d23cd43a89aa8d8865fad67017.png"></p>
-<table>
-<thead>
-<tr>
-<th align="center">文件夹啊</th>
-<th align="center">说明</th>
-<th align="center">是否需要上传GitHub</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">node_modules</td>
-<td align="center">hexo需要的模块，就是一些基础的npm安装模块，比如一些美化插件，在执行npm install的时候会重新生成</td>
-<td align="center">不需要</td>
-</tr>
-<tr>
-<td align="center">themes</td>
-<td align="center">主题文件</td>
-<td align="center">需要</td>
-</tr>
-<tr>
-<td align="center">public</td>
-<td align="center">hexo g命令执行后生成的静态页面文件</td>
-<td align="center">不需要</td>
-</tr>
-<tr>
-<td align="center">packages.json</td>
-<td align="center">记录了hexo需要的包的信息，之后换电脑了npm根据这个信息来安装hexo环境</td>
-<td align="center">需要</td>
-</tr>
-<tr>
-<td align="center">_config.yml</td>
-<td align="center">全局配置文件</td>
-<td align="center">需要</td>
-</tr>
-<tr>
-<td align="center">.gitignore</td>
-<td align="center">hexo生成的默认的.gitignore模块</td>
-<td align="center">需要</td>
-</tr>
-<tr>
-<td align="center">scaffolds</td>
-<td align="center">文章的模板</td>
-<td align="center">需要</td>
-</tr>
-<tr>
-<td align="center">deploy_git</td>
-<td align="center">hexo g自动生成的</td>
-<td align="center">不需要</td>
-</tr>
-</tbody></table>
-<h3 id="（二）同步原理"><a href="#（二）同步原理" class="headerlink" title="（二）同步原理"></a>（二）同步原理</h3><p>主要思路是利用<code>git</code>分支来实现<code>hexo</code>的同步。</p>
-<p>生成的静态页面文件默认放在<code>main</code>分支上，这是由<code>_config.yml</code>配置文件所决定的</p>
-<p>你可以在全局配置文件<code>_config.yml</code>中找到这么一段</p>
-<pre class="line-numbers language-yaml" data-language="yaml"><code class="language-yaml"><span class="token key atrule">deploy</span><span class="token punctuation">:</span>
-  <span class="token key atrule">type</span><span class="token punctuation">:</span> git
-  <span class="token key atrule">repo</span><span class="token punctuation">:</span> git@github.com<span class="token punctuation">:</span>username/username.github.io.git
-  <span class="token key atrule">branch</span><span class="token punctuation">:</span> main<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
-<p>因此每当我们执行<code>hexo d</code>的时候，<code>hexo</code>都会帮我们把生成好的静态页面文件推到<code>main</code>分支上。</p>
-<p>在我们第一次部署好博客的时候，<code>github</code>给我们创建的唯一一个分支就是<code>main</code>分支，同时也是默认分支。默认分支就意味着每次我们执行<code>git clone</code> 仓库地址或者<code>git pull</code>仓库地址拉取的是默认分支的代码。</p>
-<p>但是执行<code>hexo d</code> 对应的分支和默认分支是没有关系的，因为这是由配置文件决定的，配置文件写的哪个分支就是哪个分支。</p>
-<p>因此，<code>hexo</code>生成的静态博客文件默认放在<code>main</code>分支上。<code>hexo</code>的源文件（部署环境文件）可以都放在<code>hexo</code>分支上（可以新创建一个<code>hexo</code>分支）。然后把<code>hexo</code>分支设置成默认分支。</p>
-<h3 id="（三）老电脑上具体操作"><a href="#（三）老电脑上具体操作" class="headerlink" title="（三）老电脑上具体操作"></a>（三）老电脑上具体操作</h3><p>先创建一个分支<code>hexo</code>，将其设置为默认分支</p>
-<p>先<code>clone</code>该<code>hexo</code>仓库到本地（clone的是hexo默认分支）   </p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">git</span> clone https://github.com/xhdou/xhdou.github.io.git<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<p>下载的文件夹里仅留下<code>.git</code>，<code>.gitignore</code>，其他的文件都删除</p>
-<p>在克隆的仓库下分别执行以下命令更新删除操作到远程</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">git</span> <span class="token function">add</span> <span class="token parameter variable">-A</span>             <span class="token comment"># A指all，将工作区被修改、被删除、新增的文件都提交到暂存区</span>
-<span class="token function">git</span> commit <span class="token parameter variable">-m</span> <span class="token string">"--"</span>     <span class="token comment"># 将暂存区所有文件添加到本地仓库</span>
-<span class="token function">git</span> push origin hexo   <span class="token comment"># 推送当前本地分支到指定远程分支(hexo)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-
+<p>安装完毕，下载配置文件，位于 <code>/root/client.ovpn</code>,点击下图中的刷新，即可看到。右键下载即可。<br><img src="https://raw.githubusercontent.com/xhdou/image/main/20230308121919.png"></p>
+<h4 id="2、固定内网ip（重点）"><a href="#2、固定内网ip（重点）" class="headerlink" title="2、固定内网ip（重点）"></a>2、固定内网ip（重点）</h4><p>脚本安装的<code>openvpn</code>分配的内网<code>ip</code>会在<code>10.8.0.2</code>和<code>10.8.0.3</code>之间变化，但后面端口转发绑定的<code>ip</code>是<code>10.8.0.2</code>，因此需要将<code>openvpn</code>分配的ip固定。我就固定在了<code>10.8.0.2</code>，因此教程也按照此来写的。</p>
+<p>（1）创建CCD文件夹</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">sudo</span> <span class="token function">mkdir</span> /etc/openvpn/server/ccd<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p><img src="https://raw.githubusercontent.com/xhdou/image/main/20230308122507.png"></p>
+<p>（2）在<code>ccd</code>中创建文件，文件命要和客户端命名的一致，我的就是默认的<code>client</code></p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">sudo</span> <span class="token function">touch</span> /etc/openvpn/server/ccd/client<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>（3）在上一步创建的<code>client</code>文件中输入：</p>
+<pre class="line-numbers language-base" data-language="base"><code class="language-base">ifconfig-push 10.8.0.2 255.255.255.0    <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p><code>10.8.0.2</code>是你要固定<code>ip</code>，<code>255.255.255.0</code>是子网掩码，每个人可能不一样，以下是查询方法：</p>
 <ul>
-<li>注意：<ul>
-<li><p>现在<code>clone</code>下来的文件夹内应该有个<code>.gitignore</code>文件，用来忽略一些不需要的文件，表示这些类型文件不需要git。如果没有，右键新建，并移动至博客文件夹内，内容如下：</p>
-  <pre class="line-numbers language-none"><code class="language-none">.DS_Store
-Thumbs.db
-db.json
-*.log
-node_modules&#x2F;
-public&#x2F;
-.deploy*&#x2F;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-</li>
-<li><p>如果已经<code>clone</code>过主题文件，那么需要把<code>theme</code>主题文件夹里的 <code>.git</code> 也删除。因为<code>git</code>不能嵌套上传，最好是显示隐藏文件，检查一下有没有，否则上传的时候会出错，导致你的主题文件无法上传，这样你的配置在别的电脑上就用不了了。</p>
-</li>
+<li>命令输入：<code>ifconfig</code></li>
+<li>查看网卡<code>tun0</code>的<code>netmask</code><br><img src="https://raw.githubusercontent.com/xhdou/image/main/20230308122812.png"></li>
 </ul>
-</li>
-</ul>
-<p>将下载的文件夹里的<code>.git</code>，<code>.gitignore</code>移动至博客文件夹内，并在博客目录下执行以下命令：  </p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">git</span> <span class="token function">add</span> <span class="token parameter variable">-A</span>                   <span class="token comment"># A指all，将工作区被修改、被删除、新增的文件都提交到暂存区</span>
-<span class="token function">git</span> commit <span class="token parameter variable">-m</span> <span class="token string">"Hexo配置"</span>     <span class="token comment"># 将暂存区所有文件添加到本地仓库，并备注为“Hexo配置”</span>
-<span class="token function">git</span> push origin hexo         <span class="token comment"># 推送当前本地分支到指定远程分支(hexo)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<p>（4）修改<code>/etc/openvpn/server/server.conf</code>，增加：</p>
+<pre class="line-numbers language-none"><code class="language-none">client-config-dir ccd<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p><img src="https://raw.githubusercontent.com/xhdou/image/main/20230308122933.png"></p>
+<p>（5）重启服务：</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">systemctl restart openvpn-server@server<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-<p>此时已经成功将整个网站环境配置文件推送到了远程库的默认分支<code>hexo</code><br><img src="https://raw.githubusercontent.com/xhdou/image/main/PicGo20230306132325.png"> </p>
-<p>至此，网站部署至<code>main</code>分支，整个网站备份至<code>hexo</code>分支。当网站的配置或文章修改后都要将远程仓库更新。首先，依次执行：  </p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">git</span> pull hexo               <span class="token comment"># 将远程主机 hexo 分支拉取过来，与本地的分支合并。</span>
-<span class="token function">git</span> <span class="token function">add</span> <span class="token parameter variable">-A</span>                  <span class="token comment"># A指all，将工作区被修改、被删除、新增的文件都提交到暂存区</span>
-<span class="token function">git</span> commit <span class="token parameter variable">-m</span> hexo环境配置   <span class="token comment"># 将暂存区所有文件添加到本地仓库息        </span>
-<span class="token function">git</span> push origin hexo        <span class="token comment"># 推送当前本地分支到指定远程分支(hexo)，保证hexo分支版本最新。</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
-<p>然后执行  </p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">hexo g
-hexo d<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-<p>（在此之前，有时可能需要执行<code>hexo clean</code>），完成后就会发现，最新改动已经更新到<code>main</code>分支了，两个分支互不干扰！</p>
-<h3 id="（四）新电脑上操作"><a href="#（四）新电脑上操作" class="headerlink" title="（四）新电脑上操作"></a>（四）新电脑上操作</h3><ol>
-<li><p>将新电脑的生成的<code>ssh key</code>添加到GitHub账户上</p>
-</li>
-<li><p>在新电脑上克隆<code>username.github.io</code>仓库的<code>hexo</code>分支(就是存放源码的分支)到本地，此时本地<code>git</code>仓库处于<code>hexo</code>分支，可以执行<code>git branch -v</code>查看。</p>
-</li>
-<li><p>在新电脑的<code>username.github.io</code>文件夹下执行</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">npm</span> <span class="token function">install</span> hexo
-<span class="token function">npm</span> <span class="token function">install</span>
-<span class="token function">npm</span> <span class="token function">install</span> hexo-deployer-git（记得，不需要hexo init这条指令）<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre></li>
+<h3 id="（二）客户端安装"><a href="#（二）客户端安装" class="headerlink" title="（二）客户端安装"></a>（二）客户端安装</h3><p>首先下载<code>windows</code>客户端软件，<a target="_blank" rel="noopener" href="https://openvpn.net/vpn-client/">OpenVPN客户端下载</a>。</p>
+<p>安装完毕后，把之前下载的<code>client.ovpn</code>文件拖拽到下图虚线框中。<br><img src="https://raw.githubusercontent.com/xhdou/image/main/20230308130849.png"></p>
+<p>点击，<code>CONNECT</code>，点击图中的开关，变成绿色，下面出现流量波形，看到有上传下载数据了，就是连上服务器了，你的<code>VPN</code>可以正常使用了。<br><img src="https://raw.githubusercontent.com/xhdou/image/main/dfed0e0f3be516401cda037392f2a2c.jpg"></p>
+<blockquote>
+<p>备注：如果用的是腾讯云这种有防火墙面板的云服，则需要在防火墙管理面板中，打开相应的端口（即<code>1194</code>），否则会连接不上。</p>
+</blockquote>
+<h2 id="四、端口转发"><a href="#四、端口转发" class="headerlink" title="四、端口转发"></a>四、端口转发</h2><ol>
+<li>远程登录<code>vps</code>，关闭防火墙。<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">sudo</span> ufw disable   <span class="token comment"># 关闭防火墙</span>
+<span class="token function">sudo</span> ufw <span class="token builtin class-name">enable</span>    <span class="token comment"># 其用防火墙</span>
+<span class="token function">sudo</span> ufw status    <span class="token comment"># 查看防火墙状态</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre></li>
+<li>安装<code>rintrd</code><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">apt-get</span> <span class="token function">install</span> rinetd <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></li>
+<li>配置<code>/etc/rinetd.conf</code> 文件<pre class="line-numbers language-none"><code class="language-none">0.0.0.0     31400       10.8.0.2      31400
+0.0.0.0     31401       10.8.0.2      31401
+0.0.0.0     31402       10.8.0.2      31402
+0.0.0.0     31403       10.8.0.2      31403
+0.0.0.0     31404       10.8.0.2      31404
+0.0.0.0     31405       10.8.0.2      31405
+0.0.0.0     31406       10.8.0.2      31406
+0.0.0.0     31407       10.8.0.2      31407
+0.0.0.0     31408       10.8.0.2      31408
+0.0.0.0     31409       10.8.0.2      31409<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<img src="https://raw.githubusercontent.com/xhdou/image/main/20230308144202.png"></li>
 </ol>
-<p>4.最后执行<code>hexo g</code>、<code>hexo s</code>、<code>hexo d</code>等命令即可提交成功</p>
-<p>上面步骤中，<code>npm install</code>其实就是读取了<code>packages.json</code>里面的信息，自动安装依赖，有的小伙伴可能只执行<code>npm install</code>就行了，不过按照上面的三步是最稳妥的。</p>
-<p>这里提一嘴，当新电脑上的操作成功之后，其实对于新电脑还是老电脑其实都无所谓了，任何一台电脑包括老电脑只要安装了<code>NodeJs</code>环境，就都可以按照在新电脑上的操作完整地复刻出一个<code>hexo</code>环境，你甚至可以把老电脑原有的<code>hexo</code>工程删掉再执行上面这几步一样可以快速构建<code>hexo</code>环境，可以看到步骤非常简单。</p>
-<p>此外，为了保证同步，推荐先执行：</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">git</span> pull hexo<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<p>合并更新再进行博客的编写。</p>
-<h2 id="七、总结常用的操作命令"><a href="#七、总结常用的操作命令" class="headerlink" title="七、总结常用的操作命令"></a>七、总结常用的操作命令</h2><p>环境配置修改后，需要执行以下命令：</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">git</span> pull hexo               <span class="token comment"># 将远程主机 hexo 分支拉取过来，与本地的分支合并。</span>
-<span class="token function">git</span> <span class="token function">add</span> <span class="token parameter variable">-A</span>                  <span class="token comment"># A指all，将工作区被修改、被删除、新增的文件都提交到暂存区</span>
-<span class="token function">git</span> commit <span class="token parameter variable">-m</span> hexo环境配置   <span class="token comment"># 将暂存区所有文件添加到本地仓库息        </span>
-<span class="token function">git</span> push origin hexo        <span class="token comment"># 推送当前本地分支到指定远程分支(hexo)，保证hexo分支版本最新。</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
-
-<p>换电脑写博客前（指的是曾经也写过博客的电脑），一般要执行以下命令：</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">git</span> pull hexo    <span class="token comment"># 将远程主机 hexo 分支拉取过来，与本地的分支合并。</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<p>新建文章，执行以下命令：</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">hexo new post 测试文章<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<p>写完博客后，一般执行以下命令：</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">hexo clean     <span class="token comment"># 清除缓存文件 (db.json) 和已生成的静态文件 (public)</span>
-hexo g         <span class="token comment"># 生成静态文件</span>
-hexo d         <span class="token comment"># 部署之前预先生成静态文件</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-
-<h2 id="八、其他功能设置"><a href="#八、其他功能设置" class="headerlink" title="八、其他功能设置"></a>八、其他功能设置</h2><h3 id="1、增加评论"><a href="#1、增加评论" class="headerlink" title="1、增加评论"></a>1、增加评论</h3><p>参考<a target="_blank" rel="noopener" href="https://liukgg.github.io/2021/08/15/hexo/hexo-zai-matery-zhu-ti-xia-ji-cheng-utteranc-ping-lun-cha-jian/">hexo在matery主题下集成utteranc评论插件</a></p>
+<blockquote>
+<p>备注：<br><code>0.0.0.0</code>表示本机绑定所有可用地址<br><code>10.8.0.2</code>是<code>OpenVPN</code>分配的ip4地址</p>
+</blockquote>
+<ol start="4">
+<li><p>关闭程序：</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">pkill</span> rinetd<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+</li>
+<li><p>启动程序：</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">rinetd <span class="token parameter variable">-c</span> /etc/rinetd.conf <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+</li>
+<li><p><code>rinted</code>常用命令:</p>
+<pre class="line-numbers language-base" data-language="base"><code class="language-base">systemctl start rinetd      # 启动rinetd服务
+systemctl restart rinetd    # 重启rinetd服务
+systemctl stop rinetd       # 停止rinetd服务
+systemctl enable rinetd     # 设置rinetd开机自启动
+systemctl reload rinetd     # 修改&#x2F;etc&#x2F;rinetd.conf之后，重新加载配置<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
+</ol>
+<h2 id="五、Docker安装"><a href="#五、Docker安装" class="headerlink" title="五、Docker安装"></a>五、Docker安装</h2><h3 id="1、系统设置"><a href="#1、系统设置" class="headerlink" title="1、系统设置"></a>1、系统设置</h3><p>首先需要进入<code>Bios</code>，打开虚拟化功能。<br><img src="https://raw.githubusercontent.com/xhdou/image/main/20230308132159.png"></p>
+<p>将<code>windows</code>功能中的<code>Hyper-V</code>和<code>适用于Linux的windows子系统</code>勾选。<br><img src="https://raw.githubusercontent.com/xhdou/image/main/20230308132824.png"></p>
+<h3 id="2、WSL-2安装"><a href="#2、WSL-2安装" class="headerlink" title="2、WSL 2安装"></a>2、WSL 2安装</h3><p>参考Microsoft的<a target="_blank" rel="noopener" href="https://learn.microsoft.com/en-us/windows/wsl/install">官方文档</a>。</p>
+<blockquote>
+<p>方法一<br>以管理员模式打开 <code>PowerShell</code> 或<code> Windows</code> 命令提示符，输入 <code>wsl --install</code> 命令，然后重新启动计算机。</p>
+</blockquote>
+<blockquote>
+<p>方法二<br><a target="_blank" rel="noopener" href="https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi">下载安装包</a>，下载完成后直接安装，让后重启计算机。</p>
+<blockquote>
+<p>备注：<br>如果使用的是 <code>ARM64</code> 计算机，请下载 <code>ARM64</code> 包。 如果不确定自己计算机的类型，请打开命令提示符或 <code>PowerShell</code>，并输入：<code>systeminfo | find &quot;System Type&quot;</code>。 <code>Caveat</code>： 在非英文版 <code>Windows</code> 上，你可能必须修改搜索文本，对<code>“System Type”</code>字符串进行翻译。 你可能还需要对引号进行转义来用于 <code>find</code> 命令。 例如，在德语版中使用 <code>systeminfo | find &#39;&quot;Systemtyp&quot;&#39;</code>。</p>
+</blockquote>
+</blockquote>
+<h3 id="3、Docker安装"><a href="#3、Docker安装" class="headerlink" title="3、Docker安装"></a>3、Docker安装</h3><p><code>Docker</code>的安装教程可以参考<a target="_blank" rel="noopener" href="https://docs.docker.com/desktop/install/windows-install/">官方文档</a>。<br><a target="_blank" rel="noopener" href="https://docs.docker.com/desktop/install/windows-install/">下载Docker客户端</a>（也可以命令安装，自己看官方文档），也可以下载<a target="_blank" rel="noopener" href="https://docs.docker.com/desktop/release-notes/">往期版本</a>。</p>
+<p>下载完成后直接安装就行了，安装完成后在设置里把自动更新给关掉。</p>
+<h2 id="六、Pi-Node安装"><a href="#六、Pi-Node安装" class="headerlink" title="六、Pi Node安装"></a>六、Pi Node安装</h2><h3 id="1、Pi-Node安装"><a href="#1、Pi-Node安装" class="headerlink" title="1、Pi Node安装"></a>1、Pi Node安装</h3><p>在<code>Pi Network</code>官网上<a target="_blank" rel="noopener" href="https://node.minepi.com/node/">下载Pi Node</a>(打开网站需要魔法)，选择windows版本。<br><img src="https://raw.githubusercontent.com/xhdou/image/main/20230308131654.png"></p>
+<p>下载后直接安装，默认就是安装在C盘的。</p>
+<p>安装完成后打开，会提示在手机端验证绑定。<br><img src="https://raw.githubusercontent.com/xhdou/image/main/20230308135834.png"></p>
+<p>在手机端<code>APP</code>里<code>Node</code>里输入对应的验证码即可。<br><img src="https://raw.githubusercontent.com/xhdou/image/main/20230308140032.png"></p>
+<h3 id="2、拉取容器"><a href="#2、拉取容器" class="headerlink" title="2、拉取容器"></a>2、拉取容器</h3><p>点击界面上<code>Node</code><br><img src="https://raw.githubusercontent.com/xhdou/image/main/20230308140158.png"></p>
+<p>依次点击<code>Continue</code>,<code>Troubleshooting</code><br><img src="https://raw.githubusercontent.com/xhdou/image/main/9b8f4b20460220f3aaf633495c4328b.jpg"></p>
+<p>随后等待同步即可，下图为已同步的正常节点。<br><img src="https://raw.githubusercontent.com/xhdou/image/main/20230308141641.png"></p>
+<blockquote>
+<p>有些新节点可能拉取不出来，可以<a target="_blank" rel="noopener" href="https://d.pinode.cc/download/pi-node-0.4.7.exe">下载047版本</a>覆盖安装，等容器拉取出来后，再安装<code>045</code>版本覆盖。</p>
+</blockquote>
+<h2 id="七、节点电脑系统其他设置"><a href="#七、节点电脑系统其他设置" class="headerlink" title="七、节点电脑系统其他设置"></a>七、节点电脑系统其他设置</h2><h3 id="1、电源设置"><a href="#1、电源设置" class="headerlink" title="1、电源设置"></a>1、电源设置</h3><p><img src="https://raw.githubusercontent.com/xhdou/image/main/20230308142029.png"></p>
+<h3 id="2、禁用系统更新"><a href="#2、禁用系统更新" class="headerlink" title="2、禁用系统更新"></a>2、禁用系统更新</h3><p><img src="https://raw.githubusercontent.com/xhdou/image/main/20230308142112.png"><br><img src="https://raw.githubusercontent.com/xhdou/image/main/20230308142138.png"><br><img src="https://raw.githubusercontent.com/xhdou/image/main/20230308142159.png"></p>
+<h3 id="3、时间和日期"><a href="#3、时间和日期" class="headerlink" title="3、时间和日期"></a>3、时间和日期</h3><p><img src="https://raw.githubusercontent.com/xhdou/image/main/20230308142226.png"></p>
 
                 
             </div>
@@ -660,7 +592,7 @@ hexo d         <span class="token comment"># 部署之前预先生成静态文�
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://xhdou.github.io/2023/03/03/hexo-github-bo-ke-da-jian/">https://xhdou.github.io/2023/03/03/hexo-github-bo-ke-da-jian/</a>
+                    <a href="https://xhdou.github.io/2023/03/07/pi-network-jie-dian-da-jian/">https://xhdou.github.io/2023/03/07/pi-network-jie-dian-da-jian/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -698,12 +630,16 @@ hexo d         <span class="token comment"># 部署之前预先生成静态文�
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/Hexo/">
-                                    <span class="chip bg-color">Hexo</span>
+                                <a href="/tags/%E5%8C%BA%E5%9D%97%E9%93%BE/">
+                                    <span class="chip bg-color">区块链</span>
                                 </a>
                             
-                                <a href="/tags/%E5%8D%9A%E5%AE%A2/">
-                                    <span class="chip bg-color">博客</span>
+                                <a href="/tags/%E8%8A%82%E7%82%B9/">
+                                    <span class="chip bg-color">节点</span>
+                                </a>
+                            
+                                <a href="/tags/Pi-Network/">
+                                    <span class="chip bg-color">Pi Network</span>
                                 </a>
                             
                         </div>
@@ -796,9 +732,67 @@ hexo d         <span class="token comment"># 部署之前预先生成静态文�
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
+            <div class="card">
+                <a href="/2023/03/07/pi-network-jie-dian-da-jian/">
+                    <div class="card-image">
+                        
+                        <img src="https://raw.githubusercontent.com/xhdou/image/main/image/FS7KGcVUAEPHwP.jpg" class="responsive-img" alt="Pi Network节点搭建">
+                        
+                        <span class="card-title">Pi Network节点搭建</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-03-07
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/" class="post-category">
+                                    计算机
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E5%8C%BA%E5%9D%97%E9%93%BE/">
+                        <span class="chip bg-color">区块链</span>
+                    </a>
+                    
+                    <a href="/tags/%E8%8A%82%E7%82%B9/">
+                        <span class="chip bg-color">节点</span>
+                    </a>
+                    
+                    <a href="/tags/Pi-Network/">
+                        <span class="chip bg-color">Pi Network</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
             <div class="card">
                 <a href="/2023/03/06/picgo-github-da-jian-tu-chuang/">
                     <div class="card-image">
@@ -815,9 +809,9 @@ hexo d         <span class="token comment"># 部署之前预先生成静态文�
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2023-03-06
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-03-06
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -843,59 +837,6 @@ hexo d         <span class="token comment"># 部署之前预先生成静态文�
                     
                     <a href="/tags/%E5%B7%A5%E5%85%B7/">
                         <span class="chip bg-color">工具</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="far fa-dot-circle"></i>
-            </div>
-            <div class="card">
-                <a href="/2023/03/03/hexo-github-bo-ke-da-jian/">
-                    <div class="card-image">
-                        
-                        <img src="https://raw.githubusercontent.com/xhdou/image/main/PicGoCover.png" class="responsive-img" alt="Hexo+Github博客搭建">
-                        
-                        <span class="card-title">Hexo+Github博客搭建</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2023-03-03
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/" class="post-category">
-                                    计算机
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/Hexo/">
-                        <span class="chip bg-color">Hexo</span>
-                    </a>
-                    
-                    <a href="/tags/%E5%8D%9A%E5%AE%A2/">
-                        <span class="chip bg-color">博客</span>
                     </a>
                     
                 </div>
