@@ -41,7 +41,7 @@ tags:
 ## 三、安装Hexo
 采用`Hexo`来创建我们的博客网站，`Hexo`是一个基于NodeJS的静态博客网站生成器，使用`Hexo`不需开发，只要进行一些必要的配置即可生成一个个性化的博客网站，非常方便。点击进入[官网](https://hexo.io/zh-cn/)。
 
-```base
+```shell
 npm install hexo-cli -g    # 安装 Hexo 
 hexo init blog             # 创建一个项目 blog 并初始化
 cd blog                    # 到 blog 文件夹下
@@ -49,7 +49,7 @@ npm install                # 安装 hexo 包
 hexo server                # 本地启动
 ``` 
 <code>hexo</code>常用命令：
-```base
+```shell
 hexo clean     # 清除缓存文件 (db.json) 和已生成的静态文件 (public)
 hexo g         # 生成静态文件
 hexo d         # 部署之前预先生成静态文件
@@ -62,7 +62,7 @@ hexo d         # 部署之前预先生成静态文件
 默认的主题不太好看，不过官方提供了数百种主题供用户选择，可以根据个人喜好更换，官网主题点[这里](https://hexo.io/themes/)查看。个人用的[hexo-theme-matery](https://github.com/blinkfox/hexo-theme-matery/blob/develop/README_CN.md)，就以此为例。
 
 安装主题
-```base
+```shell
 cd blog                                                       # 到博客根目录下
 git clone https://github.com/blinkfox/hexo-theme-matery.git   # 拉取主题仓库源码
 ```
@@ -74,8 +74,8 @@ theme: next
 
 ## 五、创建文章
 你可以执行下列命令来创建一篇新文章或者新的页面。
-```base
-$ hexo new [layout] <title>
+```shell
+hexo new [layout] <title>
 ```
 您可以在命令中指定文章的布局```（layout）```，默认为```post```，可以通过修改 ```_config.yml``` 中的 ```default_layout``` 参数来指定默认布局。详情请看[官方文档](https://hexo.io/zh-cn/docs/writing)。  
 
@@ -86,7 +86,7 @@ post_asset_folder: true
 
 
 例如执行如下命令创建一篇新文章，名为《测试文章》
-```base
+```shell
 hexo new post 测试文章
 ```
 执行完成后在```source\_posts```目录下生成了一个```md```文件和一个同名的资源目录(用于存放图片)。
@@ -135,14 +135,14 @@ deploy:
 先创建一个分支```hexo```，将其设置为默认分支
 
 先```clone```该```hexo```仓库到本地（clone的是hexo默认分支）   
-```base
+```shell
 git clone https://github.com/xhdou/xhdou.github.io.git
 ```
 
 下载的文件夹里仅留下```.git```，```.gitignore```，其他的文件都删除
 
 在克隆的仓库下分别执行以下命令更新删除操作到远程
-```base
+```shell
 git add -A             # A指all，将工作区被修改、被删除、新增的文件都提交到暂存区
 git commit -m "--"     # 将暂存区所有文件添加到本地仓库
 git push origin hexo   # 推送当前本地分支到指定远程分支(hexo)
@@ -163,7 +163,7 @@ git push origin hexo   # 推送当前本地分支到指定远程分支(hexo)
     - 如果已经```clone```过主题文件，那么需要把```theme```主题文件夹里的 ```.git``` 也删除。因为```git```不能嵌套上传，最好是显示隐藏文件，检查一下有没有，否则上传的时候会出错，导致你的主题文件无法上传，这样你的配置在别的电脑上就用不了了。
 
 将下载的文件夹里的```.git```，```.gitignore```移动至博客文件夹内，并在博客目录下执行以下命令：  
-```base
+```shell
 git add -A                   # A指all，将工作区被修改、被删除、新增的文件都提交到暂存区
 git commit -m "Hexo配置"     # 将暂存区所有文件添加到本地仓库，并备注为“Hexo配置”
 git push origin hexo         # 推送当前本地分支到指定远程分支(hexo)
@@ -173,15 +173,70 @@ git push origin hexo         # 推送当前本地分支到指定远程分支(hex
 ![](https://raw.githubusercontent.com/xhdou/image/main/PicGo20230306132325.png) 
 
 至此，网站部署至```main```分支，整个网站备份至```hexo```分支。当网站的配置或文章修改后都要将远程仓库更新。首先，依次执行：  
-```base
-git pull origin             # 将远程主机 origin 的 hexo 分支拉取过来，与本地的分支合并。
+```shell
+git pull hexo               # 将远程主机 hexo 分支拉取过来，与本地的分支合并。
 git add -A                  # A指all，将工作区被修改、被删除、新增的文件都提交到暂存区
 git commit -m hexo环境配置   # 将暂存区所有文件添加到本地仓库息        
 git push origin hexo        # 推送当前本地分支到指定远程分支(hexo)，保证hexo分支版本最新。
 ```
 然后执行  
-```base
+```shell
 hexo g
 hexo d
 ```
 （在此之前，有时可能需要执行```hexo clean```），完成后就会发现，最新改动已经更新到```main```分支了，两个分支互不干扰！
+
+### （四）新电脑上操作
+
+1. 将新电脑的生成的`ssh key`添加到GitHub账户上
+
+2. 在新电脑上克隆`username.github.io`仓库的`hexo`分支(就是存放源码的分支)到本地，此时本地`git`仓库处于`hexo`分支，可以执行`git branch -v`查看。
+3. 在新电脑的`username.github.io`文件夹下执行
+```shell
+npm install hexo
+npm install
+npm install hexo-deployer-git（记得，不需要hexo init这条指令）
+```
+
+4.最后执行`hexo g`、`hexo s`、`hexo d`等命令即可提交成功
+ 
+上面步骤中，`npm install`其实就是读取了`packages.json`里面的信息，自动安装依赖，有的小伙伴可能只执行`npm install`就行了，不过按照上面的三步是最稳妥的。
+
+这里提一嘴，当新电脑上的操作成功之后，其实对于新电脑还是老电脑其实都无所谓了，任何一台电脑包括老电脑只要安装了`NodeJs`环境，就都可以按照在新电脑上的操作完整地复刻出一个`hexo`环境，你甚至可以把老电脑原有的`hexo`工程删掉再执行上面这几步一样可以快速构建`hexo`环境，可以看到步骤非常简单。
+
+此外，为了保证同步，推荐先执行：
+```shell
+git pull hexo
+```
+
+合并更新再进行博客的编写。
+
+## 七、总结常用的操作命令
+环境配置修改后，需要执行以下命令：
+```shell
+git pull hexo               # 将远程主机 hexo 分支拉取过来，与本地的分支合并。
+git add -A                  # A指all，将工作区被修改、被删除、新增的文件都提交到暂存区
+git commit -m hexo环境配置   # 将暂存区所有文件添加到本地仓库息        
+git push origin hexo        # 推送当前本地分支到指定远程分支(hexo)，保证hexo分支版本最新。
+```
+
+换电脑写博客前（指的是曾经也写过博客的电脑），一般要执行以下命令：
+```shell
+git pull hexo    # 将远程主机 hexo 分支拉取过来，与本地的分支合并。
+```
+
+新建文章，执行以下命令：
+```shell
+hexo new post 测试文章
+```
+
+写完博客后，一般执行以下命令：
+```shell
+hexo clean     # 清除缓存文件 (db.json) 和已生成的静态文件 (public)
+hexo g         # 生成静态文件
+hexo d         # 部署之前预先生成静态文件
+```
+
+## 八、其他功能设置
+### 1、增加评论
+参考[hexo在matery主题下集成utteranc评论插件](https://liukgg.github.io/2021/08/15/hexo/hexo-zai-matery-zhu-ti-xia-ji-cheng-utteranc-ping-lun-cha-jian/)

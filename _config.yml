@@ -7,7 +7,7 @@ title: 才思敏捷的小派派
 subtitle: '才思敏捷的小派派'
 description: ''
 keywords:
-author: 花豆
+author: 小派派
 language: zh-CN
 timezone: ''
 
@@ -122,3 +122,5 @@ postInfo:
   totalCount: true # 设置站点文章总字数统计为 true.
   min2read: true # 阅读时长.
   readCount: true # 阅读次数.
+
+

@@ -3,7 +3,7 @@ title: PicGo+Github搭建图床
 date: 2023-03-06 18:25:00
 author: 小派派
 img: https://raw.githubusercontent.com/xhdou/image/main/PicGo20230306181459.png
-top: true
+top: false
 hide: false
 cover: true
 coverImg: https://raw.githubusercontent.com/xhdou/image/main/PicGo20230306181459.png
@@ -39,3 +39,4 @@ tags:
 
 ### （二）客户端PicGo配置
 客户端配置操作其实差不多，可以参考[PicGo + GitHub 搭建个人图床工具](https://blog.csdn.net/yefcion/article/details/88412025)。
+
