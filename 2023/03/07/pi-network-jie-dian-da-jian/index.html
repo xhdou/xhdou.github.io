@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Pi Network节点搭建, 才思敏捷的小派派">
+    <meta name="keywords" content="Pi Network节点搭建, 小派派">
     <meta name="description" content="一、新人常见问题（一）版本选择，045还是047？目前官方版本是045，但是大陆有墙，我们的节点无法正常与项目方的服务器进行通信，因此当时项目方开发了047版本，但是047版本虽然可以同步，但是通过抓包可以发现047无法向项目方服务器发送h">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -17,7 +17,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Pi Network节点搭建 | 才思敏捷的小派派</title>
+    <title>Pi Network节点搭建 | 小派派</title>
     <link rel="icon" type="image/png" href="/favicon.png">
     
 
@@ -64,7 +64,7 @@
                     
                     <img src="/medias/logo.png" class="logo-img" alt="LOGO">
                     
-                    <span class="logo-span">才思敏捷的小派派</span>
+                    <span class="logo-span">小派派</span>
                 </a>
             </div>
             
@@ -168,7 +168,7 @@
         
         <img src="/medias/logo.png" class="logo-img circle responsive-img">
         
-        <div class="logo-name">才思敏捷的小派派</div>
+        <div class="logo-name">小派派</div>
         <div class="logo-desc">
             
             Never really desperate, only the lost of the soul.
@@ -416,21 +416,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2023-03-08
+                    2023-03-10
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    2k
+                    2.2k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    7 分
+                    8 分
                 </div>
                 
 
@@ -455,7 +455,7 @@
             <div id="articleContent">
                 <h2 id="一、新人常见问题"><a href="#一、新人常见问题" class="headerlink" title="一、新人常见问题"></a>一、新人常见问题</h2><h3 id="（一）版本选择，045还是047？"><a href="#（一）版本选择，045还是047？" class="headerlink" title="（一）版本选择，045还是047？"></a>（一）版本选择，045还是047？</h3><p>目前官方版本是<code>045</code>，但是大陆有墙，我们的节点无法正常与项目方的服务器进行通信，因此当时项目方开发了<code>047</code>版本，但是<code>047</code>版本虽然可以同步，但是通过抓包可以发现<code>047</code>无法向项目方服务器发送<code>heart</code>包（相当于工作打卡记录），因此<code>047</code>无法获取奖励。</p>
 <p>其次，<code>047</code>需要公网<code>ip</code>，目前国内公网<code>ip</code>貌似很难申请，至少据我了解江苏境内的电信都已经停止了申请公网<code>ip</code>业务（移动、联通未了解）。而045需要购买境外云服，通过云服来做内网穿透及科学上网，云服费用<code>20-50RMB</code>&#x2F;月不等。</p>
-<p>有人说<code>045</code>无法竞争超级节点，其实吧，从一开始就坚持047的人我就不好说什么了，但是就现阶段，你说你即便选择<code>047</code>，你超级节点能竞争过那些坚持一两年的人么，而且还没奖励。所以我个人建议新人选择<code>045</code>，直接做普通节点拿奖励就好。</p>
+<p>有人说<code>045</code>无法竞争超级节点，其实吧，从一开始就坚持<code>047</code>的人我就不好说什么了，但是就现阶段，你说你即便选择<code>047</code>，你超级节点能竞争过那些坚持一两年的人么，而且还没奖励。所以我个人建议新人选择<code>045</code>，直接做普通节点拿奖励就好。</p>
 <p>以下搭建教程也是针对<code>045</code>版本的。</p>
 <h3 id="（二）需要什么电脑配置？"><a href="#（二）需要什么电脑配置？" class="headerlink" title="（二）需要什么电脑配置？"></a>（二）需要什么电脑配置？</h3><p>节点电脑主要看两个硬件，<code>CPU</code>和运行内存。</p>
 <p><code>CPU</code>的话，<code>i3</code>以上就行，越好奖励越高，运行内存<code>8G</code>以上。</p>
@@ -505,7 +505,7 @@
 <blockquote>
 <p>备注：如果用的是腾讯云这种有防火墙面板的云服，则需要在防火墙管理面板中，打开相应的端口（即<code>1194</code>），否则会连接不上。</p>
 </blockquote>
-<h2 id="四、端口转发"><a href="#四、端口转发" class="headerlink" title="四、端口转发"></a>四、端口转发</h2><ol>
+<h2 id="四、端口转发"><a href="#四、端口转发" class="headerlink" title="四、端口转发"></a>四、端口转发</h2><h3 id="（一）方案一：rinetd"><a href="#（一）方案一：rinetd" class="headerlink" title="（一）方案一：rinetd"></a>（一）方案一：rinetd</h3><ol>
 <li>远程登录<code>vps</code>，关闭防火墙。<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">sudo</span> ufw disable   <span class="token comment"># 关闭防火墙</span>
 <span class="token function">sudo</span> ufw <span class="token builtin class-name">enable</span>    <span class="token comment"># 其用防火墙</span>
 <span class="token function">sudo</span> ufw status    <span class="token comment"># 查看防火墙状态</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre></li>
@@ -530,8 +530,9 @@
 <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">pkill</span> rinetd<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 </li>
 <li><p>启动程序：</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">rinetd <span class="token parameter variable">-c</span> /etc/rinetd.conf <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-</li>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">rinetd <span class="token parameter variable">-c</span> /etc/rinetd.conf <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></li>
+<li><p>检查：</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">netstat</span> <span class="token parameter variable">-antup</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></li>
 <li><p><code>rinted</code>常用命令:</p>
 <pre class="line-numbers language-base" data-language="base"><code class="language-base">systemctl start rinetd      # 启动rinetd服务
 systemctl restart rinetd    # 重启rinetd服务
@@ -539,6 +540,10 @@ systemctl stop rinetd       # 停止rinetd服务
 systemctl enable rinetd     # 设置rinetd开机自启动
 systemctl reload rinetd     # 修改&#x2F;etc&#x2F;rinetd.conf之后，重新加载配置<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
 </ol>
+<h3 id="（二）方案二：redir"><a href="#（二）方案二：redir" class="headerlink" title="（二）方案二：redir"></a>（二）方案二：redir</h3><p>安装<code>redir</code>：</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">apt-get</span> <span class="token function">install</span> redir<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>安装完成之后，添加端口映射：</p>
+<pre class="line-numbers language-base" data-language="base"><code class="language-base">redir :31400 10.8.0.2:31400&amp;redir :31401 10.8.0.2:31401&amp;redir :31402 10.8.0.2:31402&amp;redir :31403 10.8.0.2:31403&amp;redir :31404 10.8.0.2:31404&amp;redir :31405 10.8.0.2:31405&amp;redir :31406 10.8.0.2:31406&amp;redir :31407 10.8.0.2:31407&amp;redir :31408 10.8.0.2:31408&amp;redir :31409 10.8.0.2:31409<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <h2 id="五、Docker安装"><a href="#五、Docker安装" class="headerlink" title="五、Docker安装"></a>五、Docker安装</h2><h3 id="1、系统设置"><a href="#1、系统设置" class="headerlink" title="1、系统设置"></a>1、系统设置</h3><p>首先需要进入<code>Bios</code>，打开虚拟化功能。<br><img src="https://raw.githubusercontent.com/xhdou/image/main/20230308132159.png"></p>
 <p>将<code>windows</code>功能中的<code>Hyper-V</code>和<code>适用于Linux的windows子系统</code>勾选。<br><img src="https://raw.githubusercontent.com/xhdou/image/main/20230308132824.png"></p>
 <h3 id="2、WSL-2安装"><a href="#2、WSL-2安装" class="headerlink" title="2、WSL 2安装"></a>2、WSL 2安装</h3><p>参考Microsoft的<a target="_blank" rel="noopener" href="https://learn.microsoft.com/en-us/windows/wsl/install">官方文档</a>。</p>
@@ -566,6 +571,7 @@ systemctl reload rinetd     # 修改&#x2F;etc&#x2F;rinetd.conf之后，重新�
 <h2 id="七、节点电脑系统其他设置"><a href="#七、节点电脑系统其他设置" class="headerlink" title="七、节点电脑系统其他设置"></a>七、节点电脑系统其他设置</h2><h3 id="1、电源设置"><a href="#1、电源设置" class="headerlink" title="1、电源设置"></a>1、电源设置</h3><p><img src="https://raw.githubusercontent.com/xhdou/image/main/20230308142029.png"></p>
 <h3 id="2、禁用系统更新"><a href="#2、禁用系统更新" class="headerlink" title="2、禁用系统更新"></a>2、禁用系统更新</h3><p><img src="https://raw.githubusercontent.com/xhdou/image/main/20230308142112.png"><br><img src="https://raw.githubusercontent.com/xhdou/image/main/20230308142138.png"><br><img src="https://raw.githubusercontent.com/xhdou/image/main/20230308142159.png"></p>
 <h3 id="3、时间和日期"><a href="#3、时间和日期" class="headerlink" title="3、时间和日期"></a>3、时间和日期</h3><p><img src="https://raw.githubusercontent.com/xhdou/image/main/20230308142226.png"></p>
+<h3 id="4、关闭公用网络防火墙"><a href="#4、关闭公用网络防火墙" class="headerlink" title="4、关闭公用网络防火墙"></a>4、关闭公用网络防火墙</h3><p>检查电脑公用网络防火墙是否关闭，否则端口转发无法成功。<a target="_blank" rel="noopener" href="https://support.microsoft.com/zh-cn/windows/%E6%89%93%E5%BC%80%E6%88%96%E5%85%B3%E9%97%AD-microsoft-defender-%E9%98%B2%E7%81%AB%E5%A2%99-ec0844f7-aebd-0583-67fe-601ecf5d774f">打开或关闭 Microsoft Defender 防火墙</a>。</p>
 
                 
             </div>
@@ -1047,7 +1053,7 @@ systemctl reload rinetd     # 修改&#x2F;etc&#x2F;rinetd.conf之后，重新�
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                        class="white-color">4.7k</span>
+                        class="white-color">4.9k</span>
             
             
             
