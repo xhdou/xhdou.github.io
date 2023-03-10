@@ -174,7 +174,7 @@ git push origin hexo         # 推送当前本地分支到指定远程分支(hex
 
 至此，网站部署至```main```分支，整个网站备份至```hexo```分支。当网站的配置或文章修改后都要将远程仓库更新。首先，依次执行：  
 ```shell
-git pull hexo               # 将远程主机 hexo 分支拉取过来，与本地的分支合并。
+git pull origin hexo              # 将远程主机 hexo 分支拉取过来，与本地的分支合并。
 git add -A                  # A指all，将工作区被修改、被删除、新增的文件都提交到暂存区
 git commit -m hexo环境配置   # 将暂存区所有文件添加到本地仓库息        
 git push origin hexo        # 推送当前本地分支到指定远程分支(hexo)，保证hexo分支版本最新。
@@ -206,7 +206,7 @@ npm install hexo-deployer-git（记得，不需要hexo init这条指令）
 
 此外，为了保证同步，推荐先执行：
 ```shell
-git pull hexo
+git pull origin hexo
 ```
 
 合并更新再进行博客的编写。
@@ -214,7 +214,7 @@ git pull hexo
 ## 七、总结常用的操作命令
 环境配置修改后，需要执行以下命令：
 ```shell
-git pull hexo               # 将远程主机 hexo 分支拉取过来，与本地的分支合并。
+git pull origin hexo              # 将远程主机 hexo 分支拉取过来，与本地的分支合并。
 git add -A                  # A指all，将工作区被修改、被删除、新增的文件都提交到暂存区
 git commit -m hexo环境配置   # 将暂存区所有文件添加到本地仓库息        
 git push origin hexo        # 推送当前本地分支到指定远程分支(hexo)，保证hexo分支版本最新。
@@ -222,7 +222,7 @@ git push origin hexo        # 推送当前本地分支到指定远程分支(hexo
 
 换电脑写博客前（指的是曾经也写过博客的电脑），一般要执行以下命令：
 ```shell
-git pull hexo    # 将远程主机 hexo 分支拉取过来，与本地的分支合并。
+git pull origin hexo    # 将远程主机 hexo 分支拉取过来，与本地的分支合并。
 ```
 
 新建文章，执行以下命令：
